@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_standard" name="shell-type" />
+
+  <!-- Primary Meta Tags -->
+  <title>MISTER CODERZ | Kartik Singh — Freelance Web Developer</title>
+  <meta name="title" content="MISTER CODERZ | Kartik Singh — Freelance Web Developer" />
+  <meta name="description"
+    content="Bespoke web development studio led by Kartik Singh. Hand-crafted, modern, responsive websites for local businesses, cafés, restaurants, and growing brands worldwide." />
+  <meta name="author" content="Kartik Singh" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#131313" />
+  <link rel="canonical" href="https://mistercoderz.com/" />
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mistercoderz.com/" />
+  <meta property="og:title" content="MISTER CODERZ | Kartik Singh — Freelance Web Developer" />
+  <meta property="og:description"
+    content="Modern, responsive websites engineered for businesses that want to grow. Fast, clean, bespoke web development with zero fluff." />
+  <meta property="og:image" content="https://mistercoderz.com/assets/images/og-image.png" />
+  <meta property="og:site_name" content="MISTER CODERZ" />
+
+  <!-- Twitter / X -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://mistercoderz.com/" />
+  <meta property="twitter:title" content="MISTER CODERZ | Kartik Singh — Freelance Web Developer" />
+  <meta property="twitter:description"
+    content="Modern, responsive websites engineered for businesses that want to grow. Fast, clean, bespoke web development with zero fluff." />
+  <meta property="twitter:image" content="https://mistercoderz.com/assets/images/og-image.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+
+  <style>
+    @layer base {
+      html {
+        scroll-behavior: smooth;
+        background-color: #131313;
+        color: #e5e2e1;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        overscroll-behavior-y: none;
+      }
+    }
+
+    /* Custom high-tech scrollbar for code/showcase viewers */
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #1c1b1b;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #353534;
+      border-radius: 9999px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #ff7a24;
+    }
+
+    /* Smooth focus rings */
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 2px solid #ff7a24;
+      outline-offset: 2px;
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#131313",
+            "surface-dim": "#131313",
+            "surface-bright": "#3a3939",
+            "surface-container-lowest": "#0e0e0e",
+            "surface-container-low": "#1c1b1b",
+            "surface-container": "#201f1f",
+            "surface-container-high": "#2a2a2a",
+            "surface-container-highest": "#353534",
+            "surface-variant": "#353534",
+            "on-surface": "#e5e2e1",
+            "on-surface-variant": "#e0c0b1",
+            "inverse-surface": "#e5e2e1",
+            "inverse-on-surface": "#313030",
+            "outline": "#a78b7d",
+            "outline-variant": "#584237",
+            "surface-tint": "#ffb690",
+            "primary": "#ffb690",
+            "on-primary": "#552100",
+            "primary-container": "#ff7a24",
+            "on-primary-container": "#5f2600",
+            "inverse-primary": "#9d4300",
+            "secondary": "#c6c6c7",
+            "on-secondary": "#2f3131",
+            "secondary-container": "#454747",
+            "on-secondary-container": "#b4b5b5",
+            "tertiary": "#7ed0ff",
+            "on-tertiary": "#00344a",
+            "tertiary-container": "#00ace9",
+            "on-tertiary-container": "#003c54",
+            "error": "#ffb4ab",
+            "on-error": "#690005",
+            "error-container": "#93000a",
+            "on-error-container": "#ffdad6",
+            "primary-fixed": "#ffdbca",
+            "primary-fixed-dim": "#ffb690",
+            "on-primary-fixed": "#341100",
+            "on-primary-fixed-variant": "#783200",
+            "secondary-fixed": "#e2e2e2",
+            "secondary-fixed-dim": "#c6c6c7",
+            "on-secondary-fixed": "#1a1c1c",
+            "on-secondary-fixed-variant": "#454747",
+            "tertiary-fixed": "#c5e7ff",
+            "tertiary-fixed-dim": "#7ed0ff",
+            "on-tertiary-fixed": "#001e2d",
+            "on-tertiary-fixed-variant": "#004c6a",
+            "background": "#131313",
+            "on-background": "#e5e2e1"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "sm": "0.125rem",
+            "md": "0.375rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "margin-lg": "5rem",
+            "margin": "1.5rem",
+            "margin-md": "3rem",
+            "gutter-sm": "1rem",
+            "gutter": "1.5rem",
+            "gutter-lg": "2rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem"
+          },
+          fontFamily: {
+            "display-hero": ["Space Grotesk", "sans-serif"],
+            "display-hero-mobile": ["Space Grotesk", "sans-serif"],
+            "headline-lg": ["Space Grotesk", "sans-serif"],
+            "headline-lg-mobile": ["Space Grotesk", "sans-serif"],
+            "headline-md": ["Space Grotesk", "sans-serif"],
+            "headline-sm": ["Space Grotesk", "sans-serif"],
+            "body-lg": ["Geist", "sans-serif"],
+            "body-md": ["Geist", "sans-serif"],
+            "body-sm": ["Geist", "sans-serif"],
+            "label-mono": ["JetBrains Mono", "monospace"],
+            "label-mono-sm": ["JetBrains Mono", "monospace"]
+          },
+          fontSize: {
+            "display-hero": ["72px", { lineHeight: "76px", letterSpacing: "-0.03em", fontWeight: "600" }],
+            "display-hero-mobile": ["40px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "headline-lg": ["44px", { lineHeight: "50px", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "headline-lg-mobile": ["30px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "headline-md": ["28px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "500" }],
+            "headline-sm": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "500" }],
+            "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }],
+            "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }],
+            "label-mono": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "500" }],
+            "label-mono-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "400" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- ========================================================================= -->
+  <!-- 1. NAVIGATION -->
+  <!-- ========================================================================= -->
+  <header
+    class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/90 backdrop-blur-xl border-b border-surface-container-high/40 shadow-[0_1px_12px_rgba(0,0,0,0.5)] transition-all"
+    id="siteHeader">
+    <div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-space-sm">
+        <a class="flex items-center gap-2 group" href="#" aria-label="MISTER CODERZ Homepage">
+          <span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase font-semibold">
+            MISTER CODERZ
+          </span>
+          <span class="h-2.5 w-2.5 rounded-full bg-primary-container inline-block group-hover:scale-125 transition-transform"></span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2" id="desktopNav" aria-label="Main Navigation">
+        <a class="nav-link font-label-mono text-label-mono uppercase tracking-wider text-primary bg-surface-container py-1.5 px-3 rounded-lg font-medium transition-colors"
+          href="#hero">Home</a>
+        <a class="nav-link font-label-mono text-label-mono uppercase tracking-wider text-secondary hover:text-on-surface hover:bg-surface-container/50 py-1.5 px-3 rounded-lg transition-colors"
+          href="#work">Work</a>
+        <a class="nav-link font-label-mono text-label-mono uppercase tracking-wider text-secondary hover:text-on-surface hover:bg-surface-container/50 py-1.5 px-3 rounded-lg transition-colors"
+          href="#services">Services</a>
+        <a class="nav-link font-label-mono text-label-mono uppercase tracking-wider text-secondary hover:text-on-surface hover:bg-surface-container/50 py-1.5 px-3 rounded-lg transition-colors"
+          href="#deliverables">Deliverables</a>
+        <a class="nav-link font-label-mono text-label-mono uppercase tracking-wider text-secondary hover:text-on-surface hover:bg-surface-container/50 py-1.5 px-3 rounded-lg transition-colors"
+          href="#about">About</a>
+        <a class="nav-link font-label-mono text-label-mono uppercase tracking-wider text-secondary hover:text-on-surface hover:bg-surface-container/50 py-1.5 px-3 rounded-lg transition-colors"
+          href="#contact">Contact</a>
+      </nav>
+
+      <!-- Desktop Action & Mobile Toggle -->
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:inline-flex items-center justify-center font-headline-sm text-label-mono uppercase px-5 py-2.5 bg-primary-container text-on-primary-container font-semibold rounded hover:brightness-110 active:scale-95 transition-all shadow-md"
+          href="#contact">
+          Let's Talk
+        </a>
+
+        <!-- Developer Avatar / Status -->
+        <a href="#about" title="Kartik Singh — Lead Developer"
+          class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-primary-container/30 hover:ring-primary-container transition-all"
+          aria-label="About Kartik Singh">
+          <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobileMenuBtn" type="button"
+          class="md:hidden flex items-center justify-center w-10 h-10 rounded bg-surface-container text-on-surface hover:text-primary transition-colors focus:ring-2 focus:ring-primary-container"
+          aria-expanded="false" aria-controls="mobileNav" aria-label="Toggle navigation menu">
+          <span class="material-symbols-outlined text-[24px]" id="mobileMenuIcon">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileNav"
+      class="hidden md:hidden bg-surface-container-low border-b border-surface-container-high px-margin py-6 shadow-2xl transition-all duration-300">
+      <div class="flex flex-col gap-3">
+        <a class="mobile-nav-link font-label-mono text-body-md uppercase tracking-wider text-on-surface hover:text-primary py-2 px-3 rounded bg-surface-container/60 transition-colors"
+          href="#hero">01 / Home</a>
+        <a class="mobile-nav-link font-label-mono text-body-md uppercase tracking-wider text-secondary hover:text-primary py-2 px-3 rounded hover:bg-surface-container/40 transition-colors"
+          href="#work">02 / Selected Work</a>
+        <a class="mobile-nav-link font-label-mono text-body-md uppercase tracking-wider text-secondary hover:text-primary py-2 px-3 rounded hover:bg-surface-container/40 transition-colors"
+          href="#services">03 / Services</a>
+        <a class="mobile-nav-link font-label-mono text-body-md uppercase tracking-wider text-secondary hover:text-primary py-2 px-3 rounded hover:bg-surface-container/40 transition-colors"
+          href="#deliverables">04 / Deliverables</a>
+        <a class="mobile-nav-link font-label-mono text-body-md uppercase tracking-wider text-secondary hover:text-primary py-2 px-3 rounded hover:bg-surface-container/40 transition-colors"
+          href="#about">05 / About Me</a>
+        <a class="mobile-nav-link font-label-mono text-body-md uppercase tracking-wider text-secondary hover:text-primary py-2 px-3 rounded hover:bg-surface-container/40 transition-colors"
+          href="#contact">06 / Contact</a>
+        
+        <div class="pt-4 mt-2 border-t border-surface-container-highest/60 flex flex-col gap-3">
+          <a class="w-full inline-flex items-center justify-center font-headline-sm text-body-md text-on-primary-container font-semibold py-3 px-4 rounded bg-primary-container hover:brightness-110 transition-all text-center"
+            href="#contact">
+            Let's Build Your Website
+          </a>
+          <div class="flex items-center justify-between text-body-sm text-secondary px-2 pt-1 font-label-mono-sm">
+            <a href="https://www.instagram.com/mistercoderz/" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">
+              Instagram: @mistercoderz
+            </a>
+            <a href="mailto:14kartiksingh@gmail.com" class="hover:text-primary transition-colors">
+              14kartiksingh@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-20 bg-surface flex-1">
+    <div class="flex flex-col w-full">
+
+      <!-- ========================================================================= -->
+      <!-- 2. HERO SECTION -->
+      <!-- ========================================================================= -->
+      <section class="w-full max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg pt-12 md:pt-20 pb-20" id="hero">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+          
+          <!-- Left Column: Narrative -->
+          <div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+            
+            <!-- Live Status Beacon -->
+            <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-surface-container shadow-sm border border-outline-variant/30">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+              </span>
+              <span class="font-label-mono text-label-mono text-on-surface uppercase tracking-wider">
+                Available for new projects
+              </span>
+            </div>
+
+            <!-- Typography Stack -->
+            <div class="flex flex-col gap-space-xs mt-2">
+              <h1 class="font-display-hero text-headline-lg md:text-display-hero text-on-surface tracking-tight">
+                Hi, I'm Kartik.
+              </h1>
+              <p class="font-headline-md text-headline-sm md:text-headline-md text-primary font-medium tracking-tight mt-1">
+                I build websites for businesses that want to grow.
+              </p>
+            </div>
+
+            <p class="font-body-lg text-body-md md:text-body-lg text-secondary max-w-xl leading-relaxed">
+              Modern, responsive websites that help businesses showcase their services, reach customers and generate
+              enquiries. Precision engineering with zero fluff.
+            </p>
+
+            <!-- CTAs -->
+            <div class="flex flex-wrap items-center gap-space-md pt-4">
+              <a class="inline-flex items-center justify-center font-headline-sm text-body-md text-on-primary-container font-semibold px-space-lg py-3 rounded bg-primary-container hover:brightness-110 active:scale-95 transition-all shadow-md"
+                href="#contact">
+                Let's Build Your Website
+              </a>
+              <a class="inline-flex items-center gap-2 justify-center font-headline-sm text-body-md text-on-surface font-medium px-space-lg py-3 rounded bg-surface-container hover:bg-surface-container-high active:scale-95 transition-colors shadow-sm"
+                href="#work">
+                <span>View My Work</span>
+                <span class="material-symbols-outlined text-[18px]">south</span>
+              </a>
+            </div>
+
+            <!-- Micro telemetry row -->
+            <div class="pt-8 flex flex-wrap items-center gap-space-md sm:gap-space-lg text-secondary-fixed-dim">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-[18px]">bolt</span>
+                <span class="font-label-mono-sm text-label-mono-sm uppercase">Sub-second Latency</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-[18px]">devices</span>
+                <span class="font-label-mono-sm text-label-mono-sm uppercase">Fluid Cross-Device</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-[18px]">code_blocks</span>
+                <span class="font-label-mono-sm text-label-mono-sm uppercase">Clean Semantics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Restrained Technical Preview Card -->
+          <div class="lg:col-span-5 w-full mt-6 lg:mt-0">
+            <div class="w-full rounded-xl bg-surface-container-lowest border border-surface-container-high/60 shadow-2xl overflow-hidden">
+              
+              <!-- Window Bar -->
+              <div class="h-10 bg-surface-container-low px-4 flex items-center justify-between border-b border-surface-container-high/40">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56] inline-block"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] inline-block"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-[#27c93f] inline-block"></span>
+                </div>
+                <span class="font-label-mono-sm text-label-mono-sm text-secondary-fixed-dim tracking-wider">atelier.config.ts</span>
+                <span class="font-label-mono-sm text-label-mono-sm text-primary-container font-semibold">ACTIVE</span>
+              </div>
+
+              <!-- Code Snippet Area -->
+              <div class="p-6 font-label-mono text-label-mono text-secondary-fixed-dim leading-relaxed overflow-x-auto space-y-1.5 custom-scrollbar">
+                <div><span class="text-tertiary">const</span> <span class="text-on-surface font-semibold">atelier</span> = {</div>
+                <div class="pl-4"><span class="text-outline">creator:</span> <span class="text-primary">"Kartik Singh"</span>,</div>
+                <div class="pl-4"><span class="text-outline">brand:</span> <span class="text-primary">"MISTER CODERZ"</span>,</div>
+                <div class="pl-4"><span class="text-outline">discipline:</span> <span class="text-primary">"Bespoke Web Engineering"</span>,</div>
+                <div class="pl-4"><span class="text-outline">stack:</span> [<span class="text-tertiary">"HTML5"</span>, <span class="text-tertiary">"Tailwind"</span>, <span class="text-tertiary">"JavaScript"</span>, <span class="text-tertiary">"Vite"</span>],</div>
+                <div class="pl-4"><span class="text-outline">deliverables:</span> {</div>
+                <div class="pl-8"><span class="text-secondary">pageSpeedTarget:</span> <span class="text-primary-container font-semibold">99</span>,</div>
+                <div class="pl-8"><span class="text-secondary">responsive:</span> <span class="text-tertiary">true</span>,</div>
+                <div class="pl-8"><span class="text-secondary">customCoded:</span> <span class="text-tertiary">true</span>,</div>
+                <div class="pl-8"><span class="text-secondary">zeroBloat:</span> <span class="text-tertiary">true</span></div>
+                <div class="pl-4">},</div>
+                <div class="pl-4"><span class="text-outline">status:</span> <span class="text-primary-container">"Available for engagements"</span></div>
+                <div>};</div>
+              </div>
+
+              <!-- Window Status Bar -->
+              <div class="px-6 py-3 bg-surface-container flex items-center justify-between text-secondary border-t border-surface-container-high/40">
+                <span class="font-label-mono-sm text-label-mono-sm flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Compiled cleanly in 12ms
+                </span>
+                <span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant font-mono">UTF-8 • IST</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- 3. FEATURED WORK — BASIL CAFÉ -->
+      <!-- ========================================================================= -->
+      <section class="w-full bg-surface-container-lowest py-20 border-y border-surface-container-high/30" id="work">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-lg">
+          
+          <!-- Section Header -->
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+              <span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">
+                PORTFOLIO
+              </span>
+              <h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight mt-1">
+                Selected Work
+              </h2>
+            </div>
+            <p class="font-body-md text-body-md text-secondary max-w-md">
+              A showcase of deliberate engineering, clean hierarchy, and conversion-focused aesthetic execution.
+            </p>
+          </div>
+
+          <!-- Main Showcase Card -->
+          <div class="w-full bg-surface-container rounded-xl overflow-hidden shadow-2xl border border-surface-container-high/50 flex flex-col">
+            
+            <!-- Top bar inside showcase card -->
+            <div class="p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 bg-surface-container border-b border-surface-container-high/40">
+              <div class="flex flex-col gap-2">
+                <div class="flex flex-wrap items-center gap-3">
+                  <h3 class="font-headline-md text-headline-sm md:text-headline-md text-on-surface font-semibold">
+                    Basil Café — Website Concept
+                  </h3>
+                  <span class="font-label-mono-sm text-label-mono-sm uppercase tracking-wider px-2.5 py-1 rounded bg-surface-container-highest text-secondary border border-outline-variant/30 font-medium">
+                    Independent Concept / Demo Project
+                  </span>
+                </div>
+                <p class="font-body-md text-body-md text-secondary max-w-2xl">
+                  A multi-page restaurant website concept featuring an interactive menu, photo gallery, location and
+                  contact experience tailored for upscale culinary hospitality.
+                </p>
+              </div>
+
+              <!-- Primary Action Link -->
+              <div class="flex items-center gap-3 shrink-0">
+                <a class="inline-flex items-center gap-2 font-headline-sm text-body-md text-on-primary-container font-semibold px-5 py-2.5 rounded bg-primary-container hover:brightness-110 active:scale-95 transition-all shadow-md"
+                  href="https://14kartiksingh.github.io/basilcafedemo/index.html" rel="noopener noreferrer" target="_blank"
+                  id="exploreLiveDemoBtn" aria-label="Explore Live Demo of Basil Cafe (opens in new tab)">
+                  <span>Explore Live Demo</span>
+                  <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Tech Badges Strip -->
+            <div class="px-6 md:px-8 py-4 bg-surface-container/60 flex flex-wrap items-center justify-between gap-3 border-b border-surface-container-high/30">
+              <div class="flex flex-wrap gap-2">
+                <span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant bg-surface-container-low px-3 py-1 rounded border border-surface-container-highest/60">
+                  Website Design
+                </span>
+                <span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant bg-surface-container-low px-3 py-1 rounded border border-surface-container-highest/60">
+                  Responsive Development
+                </span>
+                <span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant bg-surface-container-low px-3 py-1 rounded border border-surface-container-highest/60">
+                  JavaScript
+                </span>
+                <span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant bg-surface-container-low px-3 py-1 rounded border border-surface-container-highest/60">
+                  Multi-Page Architecture
+                </span>
+                <span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant bg-surface-container-low px-3 py-1 rounded border border-surface-container-highest/60">
+                  Tailwind CSS
+                </span>
+              </div>
+
+              <!-- View Switcher Tabs -->
+              <div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg border border-surface-container-high" role="tablist" aria-label="Mockup Preview Modes">
+                <button type="button" class="view-tab-btn active px-3 py-1 rounded font-label-mono-sm text-label-mono-sm bg-primary-container text-on-primary-container font-medium transition-all"
+                  data-view="showcase" role="tab" aria-selected="true">
+                  Full Page Scroll
+                </button>
+                <button type="button" class="view-tab-btn px-3 py-1 rounded font-label-mono-sm text-label-mono-sm text-secondary hover:text-on-surface transition-all"
+                  data-view="menu" role="tab" aria-selected="false">
+                  Menu View
+                </button>
+                <button type="button" class="view-tab-btn px-3 py-1 rounded font-label-mono-sm text-label-mono-sm text-secondary hover:text-on-surface transition-all"
+                  data-view="mobile" role="tab" aria-selected="false">
+                  Mobile View
+                </button>
+              </div>
+            </div>
+
+            <!-- Browser Window Mockup Frame -->
+            <div class="mx-4 md:mx-8 my-6 rounded-lg bg-surface-container-lowest overflow-hidden shadow-2xl border border-surface-container-high/60">
+              
+              <!-- Browser Frame Top -->
+              <div class="h-10 bg-surface-container-high px-4 flex items-center justify-between border-b border-surface-container-highest/30">
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-[#ff5f56] inline-block"></span>
+                  <span class="w-3 h-3 rounded-full bg-[#ffbd2e] inline-block"></span>
+                  <span class="w-3 h-3 rounded-full bg-[#27c93f] inline-block"></span>
+                </div>
+                
+                <!-- Mock Address Bar -->
+                <div class="flex items-center gap-2 px-4 py-1 rounded bg-surface-container text-secondary text-body-sm font-label-mono max-w-md w-full mx-4 justify-center border border-surface-container-highest/40">
+                  <span class="material-symbols-outlined text-secondary text-[14px]">lock</span>
+                  <span class="truncate text-on-surface" id="mockAddressBar">https://14kartiksingh.github.io/basilcafedemo/index.html</span>
+                </div>
+
+                <div class="w-12 flex justify-end">
+                  <a href="https://14kartiksingh.github.io/basilcafedemo/index.html" target="_blank" rel="noopener noreferrer"
+                    title="Open live site in new tab" class="text-secondary hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Browser Viewport Area displaying the actual high-res full page concept -->
+              <div class="relative w-full max-h-[620px] overflow-y-auto bg-surface custom-scrollbar" id="browserViewport">
+                
+                <!-- View 1: Fullpage Showcase (Default) -->
+                <div id="viewShowcase" class="w-full">
+                  <picture>
+                    <source srcset="assets/images/basil-cafe-showcase.webp" type="image/webp" />
+                    <img src="assets/images/basil-cafe-showcase.jpg" alt="Basil Café Multi-Page Website Concept Showcase"
+                      width="1280" height="7217" class="w-full h-auto object-top block" />
+                  </picture>
+                </div>
+
+                <!-- View 2: Menu Showcase (Hidden by default) -->
+                <div id="viewMenu" class="hidden w-full">
+                  <img src="assets/images/basil-cafe-menu.webp" alt="Basil Café Interactive Menu Section"
+                    width="1440" height="900" class="w-full h-auto object-top block" />
+                </div>
+
+                <!-- View 3: Mobile Showcase (Hidden by default) -->
+                <div id="viewMobile" class="hidden w-full py-8 flex justify-center bg-surface-container-lowest">
+                  <div class="max-w-[390px] w-full rounded-2xl border-4 border-surface-container-high overflow-hidden shadow-2xl">
+                    <img src="assets/images/basil-cafe-mobile.webp" alt="Basil Café Mobile Responsive View"
+                      width="390" height="844" class="w-full h-auto object-top block" />
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Browser Frame Bottom Status -->
+              <div class="px-4 py-2 bg-surface-container-low flex items-center justify-between text-body-sm font-label-mono-sm text-secondary border-t border-surface-container-high/40">
+                <span class="flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-primary text-[14px]">touch_app</span>
+                  <span>Scroll vertically inside window to explore the complete concept</span>
+                </span>
+                <a href="https://14kartiksingh.github.io/basilcafedemo/index.html" target="_blank" rel="noopener noreferrer"
+                  class="text-primary hover:underline flex items-center gap-1 font-semibold">
+                  <span>Open github.io demo</span>
+                  <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                </a>
+              </div>
+
+            </div>
+
+            <!-- Highlights Checklist Under Showcase -->
+            <div class="px-6 md:px-8 pb-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="flex items-start gap-3 bg-surface-container-low p-4 rounded-lg border border-surface-container-highest/40">
+                <span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">menu_book</span>
+                <div>
+                  <h4 class="font-headline-sm text-body-md text-on-surface font-semibold">Categorized Dining Menu</h4>
+                  <p class="font-body-sm text-body-sm text-secondary">Organized sections for dosas, thin crust pizzas, pasta, drinks and desserts.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 bg-surface-container-low p-4 rounded-lg border border-surface-container-highest/40">
+                <span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">devices</span>
+                <div>
+                  <h4 class="font-headline-sm text-body-md text-on-surface font-semibold">Cross-Device Architecture</h4>
+                  <p class="font-body-sm text-body-sm text-secondary">Fluid layout tested across mobile viewports, tablets, and desktop resolutions.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 bg-surface-container-low p-4 rounded-lg border border-surface-container-highest/40">
+                <span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">chat</span>
+                <div>
+                  <h4 class="font-headline-sm text-body-md text-on-surface font-semibold">Direct Enquiry Triggers</h4>
+                  <p class="font-body-sm text-body-sm text-secondary">Pre-wired WhatsApp reservation and contact access for rapid guest conversions.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- 4. SERVICES — WHAT I CAN BUILD -->
+      <!-- ========================================================================= -->
+      <section class="w-full py-20" id="services">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-lg">
+          
+          <div>
+            <span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">
+              WHAT I DO
+            </span>
+            <h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight mt-1">
+              What I Can Build
+            </h2>
+            <p class="font-body-md text-body-md text-secondary mt-2 max-w-lg">
+              Purpose-built web solutions tailored to specific commercial operational needs.
+            </p>
+          </div>
+
+          <!-- 3-Column Services Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            
+            <!-- Card 1: Business Websites -->
+            <div class="bg-surface-container p-8 rounded-xl border border-surface-container-high/50 flex flex-col justify-between hover:bg-surface-container-high hover:border-outline-variant/40 transition-all shadow-sm group">
+              <div class="flex flex-col gap-4">
+                <div class="w-12 h-12 rounded bg-surface-container-lowest flex items-center justify-center text-primary group-hover:text-primary-container transition-colors">
+                  <span class="material-symbols-outlined text-[28px]">storefront</span>
+                </div>
+                <h3 class="font-headline-md text-headline-sm text-on-surface font-semibold">
+                  Business Websites
+                </h3>
+                <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                  Professional websites that establish your business online and help customers discover your services.
+                </p>
+              </div>
+
+              <div class="pt-8 border-t border-surface-container-highest/60 flex flex-col gap-2.5 mt-6">
+                <div class="flex items-center gap-2 text-body-sm text-secondary">
+                  <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                  <span>Clean typography &amp; layout</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-secondary">
+                  <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                  <span>Fast load times across devices</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-secondary">
+                  <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                  <span>Search-engine ready structure</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Restaurant & Café Websites -->
+            <div class="bg-surface-container p-8 rounded-xl border border-surface-container-high/50 flex flex-col justify-between hover:bg-surface-container-high hover:border-outline-variant/40 transition-all shadow-sm group">
+              <div class="flex flex-col gap-4">
+                <div class="w-12 h-12 rounded bg-surface-container-lowest flex items-center justify-center text-primary group-hover:text-primary-container transition-colors">
+                  <span class="material-symbols-outlined text-[28px]">restaurant</span>
+                </div>
+                <h3 class="font-headline-md text-headline-sm text-on-surface font-semibold">
+                  Restaurant &amp; Café Websites
+                </h3>
+                <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                  Beautiful menu displays, photo galleries, maps, opening hours and WhatsApp enquiry integration.
+                </p>
+              </div>
+
+              <div class="pt-8 border-t border-surface-container-highest/60 flex flex-col gap-2.5 mt-6">
+                <div class="flex items-center gap-2 text-body-sm text-secondary">
+                  <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                  <span>Interactive menu categories</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-secondary">
+                  <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                  <span>Direct WhatsApp reservation links</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-secondary">
+                  <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                  <span>Maps, parking &amp; venue details</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Landing Pages -->
+            <div class="bg-surface-container p-8 rounded-xl border border-surface-container-high/50 flex flex-col justify-between hover:bg-surface-container-high hover:border-outline-variant/40 transition-all shadow-sm group">
+              <div class="flex flex-col gap-4">
+                <div class="w-12 h-12 rounded bg-surface-container-lowest flex items-center justify-center text-primary group-hover:text-primary-container transition-colors">
+                  <span class="material-symbols-outlined text-[28px]">rocket_launch</span>
+                </div>
+                <h3 class="font-headline-md text-headline-sm text-on-surface font-semibold">
+                  Landing Pages
+                </h3>
+                <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                  Focused, responsive landing pages for products, services, campaigns and personal brands.
+                </p>
+              </div>
+
+              <div class="pt-8 border-t border-surface-container-highest/60 flex flex-col gap-2.5 mt-6">
+                <div class="flex items-center gap-2 text-body-sm text-secondary">
+                  <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                  <span>High-conversion CTA hierarchy</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-secondary">
+                  <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                  <span>Lightweight zero-bloat code</span>
+                </div>
+                <div class="flex items-center gap-2 text-body-sm text-secondary">
+                  <span class="material-symbols-outlined text-primary text-[16px]">check</span>
+                  <span>Direct inquiry form capture</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- 5. WHAT YOU GET — THE DELIVERABLES -->
+      <!-- ========================================================================= -->
+      <section class="w-full bg-surface-container-lowest py-20 border-y border-surface-container-high/30" id="deliverables">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-lg">
+          
+          <div>
+            <span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">
+              THE DELIVERABLES
+            </span>
+            <h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight mt-1">
+              Everything Your Business Needs Online
+            </h2>
+            <p class="font-body-md text-body-md text-secondary mt-2 max-w-xl">
+              Standard features engineered into every build to ensure you hit the ground running with zero technical headaches.
+            </p>
+          </div>
+
+          <!-- Bento Grid Deliverables -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+            
+            <!-- Deliverable 1 -->
+            <div class="bg-surface-container p-6 rounded-lg border border-surface-container-high/40 flex items-start gap-4 hover:border-outline-variant/40 transition-colors">
+              <div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+                <span class="material-symbols-outlined text-[22px]">smartphone</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h4 class="font-headline-sm text-body-md font-semibold text-on-surface">
+                  Mobile-Friendly Responsive Design
+                </h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Rigorously calibrated to look and feel effortless on phones, tablets, and wide monitors alike.
+                </p>
+              </div>
+            </div>
+
+            <!-- Deliverable 2 -->
+            <div class="bg-surface-container p-6 rounded-lg border border-surface-container-high/40 flex items-start gap-4 hover:border-outline-variant/40 transition-colors">
+              <div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+                <span class="material-symbols-outlined text-[22px]">menu_book</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h4 class="font-headline-sm text-body-md font-semibold text-on-surface">
+                  Services &amp; Menu Presentation
+                </h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Crystal-clear categorization that allows visitors to browse your core offerings instantly.
+                </p>
+              </div>
+            </div>
+
+            <!-- Deliverable 3 -->
+            <div class="bg-surface-container p-6 rounded-lg border border-surface-container-high/40 flex items-start gap-4 hover:border-outline-variant/40 transition-colors">
+              <div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+                <span class="material-symbols-outlined text-[22px]">map</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h4 class="font-headline-sm text-body-md font-semibold text-on-surface">
+                  Google Maps Integration
+                </h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Interactive pinpoints and direct GPS navigation triggers so clients find your storefront easily.
+                </p>
+              </div>
+            </div>
+
+            <!-- Deliverable 4 -->
+            <div class="bg-surface-container p-6 rounded-lg border border-surface-container-high/40 flex items-start gap-4 hover:border-outline-variant/40 transition-colors">
+              <div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+                <span class="material-symbols-outlined text-[22px]">chat</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h4 class="font-headline-sm text-body-md font-semibold text-on-surface">
+                  WhatsApp &amp; Email Enquiry Buttons
+                </h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  One-tap contact actions routed straight to your active phone and business inbox.
+                </p>
+              </div>
+            </div>
+
+            <!-- Deliverable 5 -->
+            <div class="bg-surface-container p-6 rounded-lg border border-surface-container-high/40 flex items-start gap-4 hover:border-outline-variant/40 transition-colors">
+              <div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+                <span class="material-symbols-outlined text-[22px]">schedule</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h4 class="font-headline-sm text-body-md font-semibold text-on-surface">
+                  Contact Info &amp; Operating Hours
+                </h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Clearly presented opening times, location details, parking tags, and direct phone dialers.
+                </p>
+              </div>
+            </div>
+
+            <!-- Deliverable 6 -->
+            <div class="bg-surface-container p-6 rounded-lg border border-surface-container-high/40 flex items-start gap-4 hover:border-outline-variant/40 transition-colors">
+              <div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+                <span class="material-symbols-outlined text-[22px]">speed</span>
+              </div>
+              <div class="flex flex-col gap-1">
+                <h4 class="font-headline-sm text-body-md font-semibold text-on-surface">
+                  Fast-Loading Clean Structure
+                </h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Lightweight code without slow website builders, ensuring smooth interaction and quick load times.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Turnaround Estimate Callout Card -->
+          <div class="w-full bg-surface-container p-6 md:p-8 rounded-xl border border-surface-container-high/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-2">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center text-primary-container shrink-0">
+                <span class="material-symbols-outlined text-[28px]">timelapse</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                  Typical delivery target: ~3 days
+                </span>
+                <span class="font-body-sm text-body-sm text-secondary">
+                  For suitable, clearly scoped small projects. (Estimate subject to project scope &amp; asset readiness).
+                </span>
+              </div>
+            </div>
+            
+            <a class="shrink-0 font-label-mono text-label-mono uppercase tracking-wider text-primary hover:text-primary-container font-semibold transition-colors flex items-center gap-1 group"
+              href="#contact">
+              <span>Inquire regarding schedule</span>
+              <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- 6. ABOUT ME -->
+      <!-- ========================================================================= -->
+      <section class="w-full py-20" id="about">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+            
+            <!-- Left: Personal Story & Brand Bio -->
+            <div class="lg:col-span-5 flex flex-col gap-space-sm">
+              <span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">
+                BACKGROUND
+              </span>
+              <h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight">
+                A Little About Me
+              </h2>
+              
+              <div class="pt-4 flex flex-col gap-4 font-body-lg text-body-md md:text-body-lg text-secondary leading-relaxed">
+                <p>
+                  I'm <strong class="text-on-surface font-medium">Kartik Singh</strong>, the developer behind
+                  <strong class="text-on-surface font-medium">MISTER CODERZ</strong>. I enjoy turning ideas into useful digital experiences
+                  that help businesses create a stronger online presence.
+                </p>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Every site is hand-coded with modern, efficient standards—no convoluted site builders, no fragile plugin stacks,
+                  and no unnecessary monthly maintenance overhead.
+                </p>
+                <div class="pt-2 flex flex-wrap items-center gap-3">
+                  <a href="https://www.instagram.com/mistercoderz/" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-surface-container text-body-sm font-label-mono text-on-surface hover:text-primary border border-surface-container-high transition-colors">
+                    <span class="material-symbols-outlined text-[16px] text-primary">tag</span>
+                    <span>@mistercoderz</span>
+                  </a>
+                  <a href="mailto:14kartiksingh@gmail.com"
+                    class="inline-flex items-center gap-2 px-3 py-1.5 rounded bg-surface-container text-body-sm font-label-mono text-on-surface hover:text-primary border border-surface-container-high transition-colors">
+                    <span class="material-symbols-outlined text-[16px] text-primary">mail</span>
+                    <span>14kartiksingh@gmail.com</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: 4 Principles Bento -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+              <div class="bg-surface-container p-6 rounded-lg border border-surface-container-high/40 flex flex-col gap-2 hover:border-outline-variant/40 transition-colors">
+                <div class="font-label-mono text-label-mono text-primary font-semibold">01 / PROCESS</div>
+                <h4 class="font-headline-sm text-body-lg text-on-surface font-semibold">Direct Collaboration</h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  You work directly with me from the first draft to deployment. No account managers or communication bottlenecks.
+                </p>
+              </div>
+
+              <div class="bg-surface-container p-6 rounded-lg border border-surface-container-high/40 flex flex-col gap-2 hover:border-outline-variant/40 transition-colors">
+                <div class="font-label-mono text-label-mono text-primary font-semibold">02 / CODE</div>
+                <h4 class="font-headline-sm text-body-lg text-on-surface font-semibold">Clean &amp; Maintainable</h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Semantically structured HTML, modern CSS, and lightweight scripts that remain stable without breakages.
+                </p>
+              </div>
+
+              <div class="bg-surface-container p-6 rounded-lg border border-surface-container-high/40 flex flex-col gap-2 hover:border-outline-variant/40 transition-colors">
+                <div class="font-label-mono text-label-mono text-primary font-semibold">03 / ETHOS</div>
+                <h4 class="font-headline-sm text-body-lg text-on-surface font-semibold">Straightforward Talk</h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Clear delivery timelines, clear explanations, and honest guidance on what your business actually needs.
+                </p>
+              </div>
+
+              <div class="bg-surface-container p-6 rounded-lg border border-surface-container-high/40 flex flex-col gap-2 hover:border-outline-variant/40 transition-colors">
+                <div class="font-label-mono text-label-mono text-primary font-semibold">04 / QUALITY</div>
+                <h4 class="font-headline-sm text-body-lg text-on-surface font-semibold">No Bloated Builders</h4>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Hand-crafted layouts designed specifically for your brand rather than generic drag-and-drop templates.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================================= -->
+      <!-- 7. CONTACT — CLIENT ACQUISITION -->
+      <!-- ========================================================================= -->
+      <section class="w-full bg-surface-container-lowest py-20 border-t border-surface-container-high/30" id="contact">
+        <div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+            
+            <!-- Left Column: Context & Direct Actions -->
+            <div class="lg:col-span-5 flex flex-col justify-between">
+              <div class="flex flex-col gap-space-sm">
+                <span class="font-label-mono text-label-mono uppercase tracking-widest text-primary font-semibold">
+                  GET IN TOUCH
+                </span>
+                <h2 class="font-headline-lg text-headline-md md:text-headline-lg text-on-surface tracking-tight">
+                  Have a business in mind? Let's build something.
+                </h2>
+                <p class="font-body-md text-body-md text-secondary mt-2 leading-relaxed">
+                  Tell me a little about your business and what you need. I'll get back to you with thoughts, ideas, and
+                  a clear plan.
+                </p>
+
+                <!-- Quick Direct Channels -->
+                <div class="pt-6 flex flex-col gap-3">
+                  
+                  <!-- Instagram DM Channel (Primary Quick Chat) -->
+                  <a class="inline-flex items-center justify-between p-4 rounded bg-surface-container hover:bg-surface-container-high border border-surface-container-high/50 hover:border-primary-container/40 transition-all group"
+                    href="https://www.instagram.com/mistercoderz/" rel="noopener noreferrer" target="_blank"
+                    id="instagramContactLink" aria-label="Send direct message on Instagram to @mistercoderz">
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-[20px]">chat</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                          <span class="font-headline-sm text-body-md text-on-surface font-semibold">Chat on Instagram</span>
+                          <span class="text-[11px] font-label-mono px-1.5 py-0.5 rounded bg-primary-container/20 text-primary font-medium">Fastest</span>
+                        </div>
+                        <span class="font-label-mono-sm text-label-mono-sm text-secondary">@mistercoderz • Direct Messages</span>
+                      </div>
+                    </div>
+                    <span class="material-symbols-outlined text-secondary group-hover:text-primary-container group-hover:translate-x-1 transition-all text-[20px]">
+                      arrow_forward
+                    </span>
+                  </a>
+
+                  <!-- Direct Email Link & Copy Box -->
+                  <div class="p-4 rounded bg-surface-container border border-surface-container-high/50 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <a href="mailto:14kartiksingh@gmail.com" class="flex items-center gap-3 group/mail flex-1"
+                      aria-label="Send email to 14kartiksingh@gmail.com">
+                      <div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-[20px]">mail</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <span class="font-label-mono text-label-mono text-on-surface group-hover/mail:text-primary transition-colors">
+                          14kartiksingh@gmail.com
+                        </span>
+                        <span class="font-label-mono-sm text-label-mono-sm text-secondary">Direct email enquiry</span>
+                      </div>
+                    </a>
+                    
+                    <div class="flex items-center gap-2 shrink-0">
+                      <a href="mailto:14kartiksingh@gmail.com"
+                        class="font-label-mono-sm text-label-mono-sm uppercase px-3 py-1.5 rounded bg-surface-container-highest text-on-surface hover:text-primary transition-colors inline-flex items-center gap-1">
+                        <span>Open</span>
+                        <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+                      </a>
+                      <button class="font-label-mono-sm text-label-mono-sm uppercase px-3 py-1.5 rounded bg-surface-container-highest text-on-surface hover:text-primary transition-colors"
+                        id="copyEmailBtn" type="button" aria-label="Copy email address to clipboard">
+                        Copy
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- WhatsApp Integration Ready-to-Configure Box -->
+                  <div class="p-4 rounded bg-surface-container/60 border border-surface-container-high/40 flex items-center justify-between"
+                    id="whatsappBox">
+                    <div class="flex items-center gap-3">
+                      <div class="w-10 h-10 rounded-full bg-surface-container-highest/80 text-secondary flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-[20px]">call</span>
+                      </div>
+                      <div class="flex flex-col">
+                        <div class="flex items-center gap-2">
+                          <span class="font-headline-sm text-body-md text-on-surface font-semibold">WhatsApp Connect</span>
+                          <span class="text-[10px] font-label-mono uppercase px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary" id="waStatusBadge">Ready to configure</span>
+                        </div>
+                        <span class="font-label-mono-sm text-label-mono-sm text-secondary" id="waStatusText">
+                          Awaiting phone number • Tap to chat on Instagram
+                        </span>
+                      </div>
+                    </div>
+                    <button type="button" id="whatsappActionBtn"
+                      class="font-label-mono-sm text-label-mono-sm uppercase px-3 py-1.5 rounded bg-surface-container-highest text-secondary hover:text-primary transition-colors">
+                      Connect
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Guarantee Callout -->
+              <div class="hidden lg:flex flex-col gap-2 pt-12">
+                <span class="font-label-mono-sm text-label-mono-sm text-secondary-fixed-dim uppercase tracking-wider">
+                  Turnaround Guarantee
+                </span>
+                <p class="font-body-sm text-body-sm text-secondary">
+                  Inquiries responded to promptly Monday through Saturday.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Column: Functional Enquiry Form -->
+            <div class="lg:col-span-7">
+              <div class="bg-surface-container p-6 md:p-10 rounded-xl shadow-2xl border border-surface-container-high/60">
+                <div class="mb-6">
+                  <h3 class="font-headline-md text-headline-sm text-on-surface font-semibold">Send a Project Brief</h3>
+                  <p class="font-body-sm text-body-sm text-secondary mt-1">
+                    Fill out the fields below. On submit, this generates your enquiry directly to <code class="text-primary">14kartiksingh@gmail.com</code>.
+                  </p>
+                </div>
+
+                <form class="flex flex-col gap-space-md" id="contactForm" novalidate>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                    
+                    <!-- Name Field -->
+                    <div class="flex flex-col gap-1.5">
+                      <label class="font-label-mono text-label-mono uppercase text-secondary tracking-wider" for="clientName">
+                        Your Name <span class="text-primary-container">*</span>
+                      </label>
+                      <input
+                        class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-4 py-3 rounded border border-surface-container-high focus:border-primary-container focus:ring-1 focus:ring-primary-container placeholder:text-secondary-fixed-dim/40 outline-none transition-all"
+                        id="clientName" name="name" placeholder="e.g. Rahul Sharma" required type="text" autocomplete="name" />
+                      <span class="text-error font-body-sm text-[12px] hidden" id="nameError">Please enter your name.</span>
+                    </div>
+
+                    <!-- Business Name/Type Field -->
+                    <div class="flex flex-col gap-1.5">
+                      <label class="font-label-mono text-label-mono uppercase text-secondary tracking-wider" for="businessName">
+                        Business Name or Type <span class="text-primary-container">*</span>
+                      </label>
+                      <input
+                        class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-4 py-3 rounded border border-surface-container-high focus:border-primary-container focus:ring-1 focus:ring-primary-container placeholder:text-secondary-fixed-dim/40 outline-none transition-all"
+                        id="businessName" name="business" placeholder="e.g. Artisanal Bakery / Dental Clinic" required type="text" />
+                      <span class="text-error font-body-sm text-[12px] hidden" id="businessError">Please enter your business or project name.</span>
+                    </div>
+
+                  </div>
+
+                  <!-- Email/Phone Field -->
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-label-mono text-label-mono uppercase text-secondary tracking-wider" for="clientContact">
+                      Your Email or Phone Number <span class="text-primary-container">*</span>
+                    </label>
+                    <input
+                      class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-4 py-3 rounded border border-surface-container-high focus:border-primary-container focus:ring-1 focus:ring-primary-container placeholder:text-secondary-fixed-dim/40 outline-none transition-all"
+                      id="clientContact" name="contact" placeholder="name@company.com or +91 98765 43210" required type="text" autocomplete="email" />
+                    <span class="text-error font-body-sm text-[12px] hidden" id="contactError">Please provide a valid email or phone number.</span>
+                  </div>
+
+                  <!-- Message/Needs Field -->
+                  <div class="flex flex-col gap-1.5">
+                    <label class="font-label-mono text-label-mono uppercase text-secondary tracking-wider" for="projectDetails">
+                      What do you need? <span class="text-primary-container">*</span>
+                    </label>
+                    <textarea
+                      class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-4 py-3 rounded border border-surface-container-high focus:border-primary-container focus:ring-1 focus:ring-primary-container placeholder:text-secondary-fixed-dim/40 outline-none transition-all resize-none"
+                      id="projectDetails" name="details"
+                      placeholder="Tell me about what kind of website you're looking for, any references you like, or when you hope to launch..."
+                      required rows="4"></textarea>
+                    <span class="text-error font-body-sm text-[12px] hidden" id="detailsError">Please describe your project needs.</span>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <button
+                    class="w-full inline-flex items-center justify-center gap-2 font-headline-sm text-body-md text-on-primary-container font-semibold py-3.5 px-6 rounded bg-primary-container hover:brightness-110 active:scale-[0.99] transition-all shadow-md mt-2"
+                    type="submit" id="submitBriefBtn">
+                    <span>Send Enquiry via Email</span>
+                    <span class="material-symbols-outlined text-[18px]">send</span>
+                  </button>
+
+                  <!-- Dynamic Result Feedback Card -->
+                  <div class="hidden p-5 rounded-lg bg-surface-container-highest border border-primary-container/40 flex flex-col gap-3"
+                    id="formSuccess">
+                    <div class="flex items-center gap-2 text-primary font-semibold">
+                      <span class="material-symbols-outlined text-[20px]">check_circle</span>
+                      <span>Enquiry Prepared Successfully!</span>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-secondary">
+                      Your default email application is opening pre-filled with this brief to <code class="text-on-surface">14kartiksingh@gmail.com</code>.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-2 pt-1">
+                      <a href="#" id="directMailtoLink" class="font-label-mono-sm text-label-mono-sm px-3 py-1.5 rounded bg-primary-container text-on-primary-container font-semibold inline-flex items-center gap-1 hover:brightness-110 transition-all">
+                        <span>Click to Send Email</span>
+                        <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+                      </a>
+                      <button type="button" id="copyBriefBtn" class="font-label-mono-sm text-label-mono-sm px-3 py-1.5 rounded bg-surface-container text-on-surface hover:text-primary transition-colors">
+                        Copy Brief to Clipboard
+                      </button>
+                      <a href="https://www.instagram.com/mistercoderz/" target="_blank" rel="noopener noreferrer" class="font-label-mono-sm text-label-mono-sm px-3 py-1.5 rounded bg-surface-container text-secondary hover:text-primary transition-colors">
+                        DM on Instagram instead
+                      </a>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 8. FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="w-full bg-surface-container-lowest border-t border-surface-container-high/40">
+    <div class="max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-16">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-lg pb-12 border-b border-surface-container-high/30">
+        
+        <!-- Brand & Description -->
+        <div class="md:col-span-6 flex flex-col gap-space-sm">
+          <div class="flex items-center gap-2">
+            <span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase font-semibold">
+              MISTER CODERZ
+            </span>
+            <span class="h-2 w-2 rounded-full bg-primary-container inline-block"></span>
+          </div>
+          
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-sm leading-relaxed">
+            Building useful digital experiences. Bespoke engineering atelier led by Kartik Singh.
+          </p>
+
+          <div class="flex items-center gap-2.5 mt-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            <span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant uppercase tracking-wider">
+              Available for new client engagements
+            </span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="md:col-span-3 flex flex-col gap-space-sm">
+          <span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface font-semibold">
+            Navigation
+          </span>
+          <div class="flex flex-col gap-2">
+            <a class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors" href="#hero">Home</a>
+            <a class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors" href="#work">Selected Work</a>
+            <a class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors" href="#services">What I Can Build</a>
+            <a class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors" href="#deliverables">The Deliverables</a>
+            <a class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors" href="#about">About Me</a>
+            <a class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors" href="#contact">Client Acquisition</a>
+          </div>
+        </div>
+
+        <!-- Connect Channels -->
+        <div class="md:col-span-3 flex flex-col gap-space-sm">
+          <span class="font-label-mono text-label-mono uppercase tracking-wider text-on-surface font-semibold">
+            Connect
+          </span>
+          <div class="flex flex-col gap-2">
+            <a class="font-body-sm text-body-sm text-primary hover:underline transition-colors flex items-center gap-1.5"
+              href="mailto:14kartiksingh@gmail.com">
+              <span class="material-symbols-outlined text-[16px]">mail</span>
+              <span>14kartiksingh@gmail.com</span>
+            </a>
+            <a class="font-body-sm text-body-sm text-secondary hover:text-primary transition-colors flex items-center gap-1.5"
+              href="https://www.instagram.com/mistercoderz/" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-[16px]">chat</span>
+              <span>Instagram: @mistercoderz</span>
+            </a>
+            <span class="font-body-sm text-body-sm text-on-surface-variant pt-1 flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px]">location_on</span>
+              <span>New Delhi, India • Remote Worldwide</span>
+            </span>
+            <span class="font-label-mono-sm text-label-mono-sm text-secondary-fixed-dim">
+              IST (UTC+5:30) • Global Cross-Functional
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">
+          © 2026 MISTER CODERZ. All rights reserved. Handcrafted by Kartik Singh.
+        </span>
+        <div class="flex items-center gap-4 text-on-surface-variant font-label-mono-sm text-label-mono-sm">
+          <span>LATENCY &lt; 100MS</span>
+          <span>•</span>
+          <span>ZERO BLOAT</span>
+          <span>•</span>
+          <span>mistercoderz.com</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- CLIENT SCRIPTS & INTERACTIONS -->
+  <!-- ========================================================================= -->
+  <script>
+    /**
+     * MISTER CODERZ Client Interactions
+     * Crafted for Kartik Singh
+     */
+
+    // Configuration
+    const CONTACT_CONFIG = {
+      developerName: "Kartik Singh",
+      brandName: "MISTER CODERZ",
+      email: "14kartiksingh@gmail.com",
+      instagram: "https://www.instagram.com/mistercoderz/",
+      instagramHandle: "@mistercoderz",
+      // Keep WhatsApp ready: once Kartik provides the WhatsApp phone number,
+      // populate here with country code (e.g., '919876543210')
+      whatsappNumber: ""
+    };
+
+    // 1. Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileMenuIcon = document.getElementById('mobileMenuIcon');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (mobileMenuBtn && mobileNav) {
+      function toggleMobileMenu(forceClose = false) {
+        const isExpanded = forceClose ? true : mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+        if (isExpanded) {
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+          mobileNav.classList.add('hidden');
+          mobileMenuIcon.innerText = 'menu';
+        } else {
+          mobileMenuBtn.setAttribute('aria-expanded', 'true');
+          mobileNav.classList.remove('hidden');
+          mobileMenuIcon.innerText = 'close';
+        }
+      }
+
+      mobileMenuBtn.addEventListener('click', () => toggleMobileMenu());
+
+      // Close when clicking mobile nav links
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => toggleMobileMenu(true));
+      });
+
+      // Close on Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileMenuBtn.getAttribute('aria-expanded') === 'true') {
+          toggleMobileMenu(true);
+        }
+      });
+    }
+
+    // 2. Active Scrollspy for Navigation Links
+    const sections = document.querySelectorAll('section[id]');
+    const desktopNavLinks = document.querySelectorAll('#desktopNav .nav-link');
+
+    function onScrollSpy() {
+      const scrollPos = window.scrollY + 120;
+      sections.forEach(section => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
+        if (scrollPos >= top && scrollPos < top + height) {
+          desktopNavLinks.forEach(link => {
+            if (link.getAttribute('href') === `#${id}`) {
+              link.classList.add('bg-surface-container', 'text-primary');
+              link.classList.remove('text-secondary');
+            } else {
+              link.classList.remove('bg-surface-container', 'text-primary');
+              link.classList.add('text-secondary');
+            }
+          });
+        }
+      });
+    }
+    window.addEventListener('scroll', onScrollSpy, { passive: true });
+
+    // 3. Copy Email to Clipboard Interaction
+    const copyEmailBtn = document.getElementById('copyEmailBtn');
+    if (copyEmailBtn) {
+      copyEmailBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(CONTACT_CONFIG.email).then(() => {
+          const original = copyEmailBtn.innerText;
+          copyEmailBtn.innerText = 'COPIED!';
+          copyEmailBtn.classList.add('text-primary');
+          setTimeout(() => {
+            copyEmailBtn.innerText = original;
+            copyEmailBtn.classList.remove('text-primary');
+          }, 2000);
+        });
+      });
+    }
+
+    // 4. WhatsApp Integration Ready Handler
+    const waActionBtn = document.getElementById('whatsappActionBtn');
+    const waStatusBadge = document.getElementById('waStatusBadge');
+    const waStatusText = document.getElementById('waStatusText');
+
+    if (CONTACT_CONFIG.whatsappNumber && CONTACT_CONFIG.whatsappNumber.trim() !== '') {
+      // WhatsApp configured
+      if (waStatusBadge) {
+        waStatusBadge.innerText = 'Online';
+        waStatusBadge.classList.replace('text-secondary', 'text-primary');
+      }
+      if (waStatusText) {
+        waStatusText.innerText = 'Instant chat via WhatsApp';
+      }
+      if (waActionBtn) {
+        waActionBtn.innerText = 'Chat';
+        waActionBtn.addEventListener('click', () => {
+          window.open(`https://wa.me/${CONTACT_CONFIG.whatsappNumber}`, '_blank');
+        });
+      }
+    } else {
+      // WhatsApp unconfigured: gracefully route to Instagram
+      if (waActionBtn) {
+        waActionBtn.addEventListener('click', () => {
+          alert('WhatsApp number will be configured soon. In the meantime, opening Instagram @mistercoderz for direct messaging!');
+          window.open(CONTACT_CONFIG.instagram, '_blank');
+        });
+      }
+    }
+
+    // 5. Featured Work View Switcher (Showcase / Menu / Mobile)
+    const viewTabs = document.querySelectorAll('.view-tab-btn');
+    const viewShowcase = document.getElementById('viewShowcase');
+    const viewMenu = document.getElementById('viewMenu');
+    const viewMobile = document.getElementById('viewMobile');
+    const mockAddressBar = document.getElementById('mockAddressBar');
+    const browserViewport = document.getElementById('browserViewport');
+
+    if (viewTabs.length) {
+      viewTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          viewTabs.forEach(t => {
+            t.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-medium', 'active');
+            t.classList.add('text-secondary');
+            t.setAttribute('aria-selected', 'false');
+          });
+
+          tab.classList.add('bg-primary-container', 'text-on-primary-container', 'font-medium', 'active');
+          tab.classList.remove('text-secondary');
+          tab.setAttribute('aria-selected', 'true');
+
+          const selected = tab.getAttribute('data-view');
+          if (viewShowcase) viewShowcase.classList.add('hidden');
+          if (viewMenu) viewMenu.classList.add('hidden');
+          if (viewMobile) viewMobile.classList.add('hidden');
+
+          if (browserViewport) browserViewport.scrollTop = 0;
+
+          if (selected === 'showcase') {
+            if (viewShowcase) viewShowcase.classList.remove('hidden');
+            if (mockAddressBar) mockAddressBar.innerText = 'https://14kartiksingh.github.io/basilcafedemo/index.html';
+          } else if (selected === 'menu') {
+            if (viewMenu) viewMenu.classList.remove('hidden');
+            if (mockAddressBar) mockAddressBar.innerText = 'https://14kartiksingh.github.io/basilcafedemo/menu.html';
+          } else if (selected === 'mobile') {
+            if (viewMobile) viewMobile.classList.remove('hidden');
+            if (mockAddressBar) mockAddressBar.innerText = 'https://14kartiksingh.github.io/basilcafedemo/ (Mobile View)';
+          }
+        });
+      });
+    }
+
+    // 6. Contact Form Validation & Mailto-based Enquiry Flow
+    const contactForm = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('formSuccess');
+    const directMailtoLink = document.getElementById('directMailtoLink');
+    const copyBriefBtn = document.getElementById('copyBriefBtn');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const nameInput = document.getElementById('clientName');
+        const businessInput = document.getElementById('businessName');
+        const contactInput = document.getElementById('clientContact');
+        const detailsInput = document.getElementById('projectDetails');
+
+        const nameErr = document.getElementById('nameError');
+        const businessErr = document.getElementById('businessError');
+        const contactErr = document.getElementById('contactError');
+        const detailsErr = document.getElementById('detailsError');
+
+        let isValid = true;
+
+        // Reset errors
+        [nameErr, businessErr, contactErr, detailsErr].forEach(el => el && el.classList.add('hidden'));
+
+        if (!nameInput.value.trim()) {
+          nameErr.classList.remove('hidden');
+          isValid = false;
+        }
+        if (!businessInput.value.trim()) {
+          businessErr.classList.remove('hidden');
+          isValid = false;
+        }
+        if (!contactInput.value.trim()) {
+          contactErr.classList.remove('hidden');
+          isValid = false;
+        }
+        if (!detailsInput.value.trim()) {
+          detailsErr.classList.remove('hidden');
+          isValid = false;
+        }
+
+        if (!isValid) return;
+
+        const name = nameInput.value.trim();
+        const business = businessInput.value.trim();
+        const contact = contactInput.value.trim();
+        const details = detailsInput.value.trim();
+
+        const subject = encodeURIComponent(`Website Inquiry from ${name} [${business}]`);
+        const bodyContent = 
+`Hello Kartik,
+
+I would like to discuss a website project with MISTER CODERZ.
+
+--- PROJECT BRIEF ---
+Name: ${name}
+Business / Type: ${business}
+Email / Phone: ${contact}
+
+Project Details:
+${details}
+
+Looking forward to hearing from you.`;
+
+        const mailtoUrl = `mailto:${CONTACT_CONFIG.email}?subject=${subject}&body=${encodeURIComponent(bodyContent)}`;
+
+        // Reveal the feedback container with actionable links
+        if (formSuccess) {
+          formSuccess.classList.remove('hidden');
+          if (directMailtoLink) {
+            directMailtoLink.setAttribute('href', mailtoUrl);
+          }
+        }
+
+        // Setup copy brief button
+        if (copyBriefBtn) {
+          copyBriefBtn.onclick = function () {
+            navigator.clipboard.writeText(bodyContent).then(() => {
+              const orig = copyBriefBtn.innerText;
+              copyBriefBtn.innerText = 'BRIEF COPIED!';
+              copyBriefBtn.classList.add('text-primary');
+              setTimeout(() => {
+                copyBriefBtn.innerText = orig;
+                copyBriefBtn.classList.remove('text-primary');
+              }, 2000);
+            });
+          };
+        }
+
+        // Open user mail client
+        window.location.href = mailtoUrl;
+      });
+    }
+  </script>
+</body>
+
+</html>
